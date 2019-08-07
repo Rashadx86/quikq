@@ -3,7 +3,7 @@
 # Mimic qstat output for slurm queues & added column for gres
 # To customize, update variables below
 
-export queue_loc="/$HOME/queue" #where to write temporary squeue output for parsing.
+export queue_loc="/$HOME/squeue_tmp_output" #where to write temporary squeue output for parsing.
 export partition="--partition=all"
 export squeue_options='%.24i %.12p %.9P %.8j %.8u %.8T %.10M %.11l %.6C %.6D %.6b %.22V %.6m  %R'
 export dashes=$(printf '%.s-' {1..167})
