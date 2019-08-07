@@ -4,7 +4,7 @@
 # To customize, update variables below
 
 export queue_loc="/tmp/queue" #where to write temporary squeue output for parsing.
-export partition="--partition=panda,panda_array"
+export partition="--partition=all"
 export dashes=$(printf '%.s-' {1..167})
 export queue_line=$(printf '%.s#' {1..76} && printf -- "-  QUEUE  -" && printf '%.s#' {1..76})
 export squeue_options='%.24i %.12p %.9P %.8j %.8u %.8T %.10M %.11l %.6C %.6D %.22V %.6m  %R'
