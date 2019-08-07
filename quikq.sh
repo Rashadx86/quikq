@@ -3,7 +3,7 @@
 # Mimic qstat output for slurm queues
 # To customize, update variables below
 
-export queue_loc="/$HOME/queue" #where to write temporary squeue output for parsing.
+export queue_loc="/$HOME/squeue_tmp_output" #where to write temporary squeue output for parsing.
 export partition="--partition=all"
 export dashes=$(printf '%.s-' {1..167})
 export queue_line=$(printf '%.s#' {1..76} && printf -- "-  QUEUE  -" && printf '%.s#' {1..76})
