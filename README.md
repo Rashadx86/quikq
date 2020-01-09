@@ -6,4 +6,4 @@ Mimics GridEngine's "qstat" and includes summary reporting (eg. # of jobs runnin
 
 Written in bash, run ./quikq for profit!
 
-./quikq_gpu.sh for use in partitons with gres.
+./quikq_gpu.sh for use in partitions with gres reporting.
