@@ -30,6 +30,7 @@ squeue_cmd | sort -k $total_columns > $queue_loc
 
 
 #Print running jobs
+        grep 'JOBID' $queue_loc
         awk -v dashes="$dashes" '{ c=$NF; if(c!=p && NR>1) { print dashes } print ; p=c ; } ' $queue_loc |
         awk -v column="$state_column" '$column!="PENDING"' |
         grep -v PARTITION |
